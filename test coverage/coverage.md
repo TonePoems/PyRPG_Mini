@@ -34,8 +34,28 @@ Nour Hijazi:
   -
   -
   
-Andrew Brown:
+George Brown:
   -
-  -
-  -
-  
+  - Expanded inventory/equipment management systems
+  - Added autosave feature
+  - Added a new barbarian character
+
+Inventory Management System:
+The inventory system holds usable items found in the game. I added changes that allowed the user to drop and see info on items in the inventory.
+To test these changes, I would gather many items and ensure that the info and drop commands properly did as intended, esuring that there aren't any 
+indexing exceptions.
+
+Equipment Management System:
+The equipment management system holds items such as: weapons, shields and armor. Each piece of equipment can be equipped, dropped or be shown stats.
+These items are found while adventuring, the user can choose to equip, store or discard the found equipment.
+I forced the game to find these items and allowed me to test the equip, store and discard options. I manually went through each type of equipment and 
+ensured that each action did as intended. The same method follows for when the user is going through his/her equipment. Exceptions are placed in case of 
+invalid input and incorrect indexing.
+
+Autosave Feature:
+The game will autosave when returning to camp from adventuring. All Hero data is saved into a file, the same as manually saving the game. 
+This feature can be toggled on/off from the camp menu. To test this, I would allow the game to autosave then quit and reload that save to ensure that
+the progress made to the Hero was actually saved.
+
+Added Barbarian Character:
+The addition of the barbarian character was created to add more dynamic layers to the game. The addition of a new character with different abilities and different strengths and weaknesses allows the game to be more fun. The addition of this character was tested by making sure that when the user selects the barbarian character, that the barbarian character is actually created and populated with the correct stats. 
