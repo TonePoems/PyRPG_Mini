@@ -120,17 +120,17 @@ class Game():
 
     # TODO: make self.ourhero.levelup and newhero the same function
     # makes a new hero object for when starting new game.
-    """@brief sets up hero
-
-    This function asks the user to select which hero they
-    would like to be. If the correct input is not put in
-    the Hero is automatically set to warrior. The user
-    is then able to select the difficulty they would like to
-    play on.
-    @param none
-    @return the new hero object
-    """
     def newhero(self):
+        """@brief sets up hero
+
+        This function asks the user to select which hero they
+        would like to be. If the correct input is not put in
+        the Hero is automatically set to warrior. The user
+        is then able to select the difficulty they would like to
+        play on.
+        @param none
+        @return the new hero object
+        """
         self.conn.execute('SELECT * FROM levelnotes WHERE level = 1;')
         rows = self.conn.fetchall()
         marqueeprint('[CHOOSE CLASS]')
@@ -200,21 +200,21 @@ class Game():
         """
         If the user does not plave their name in
         a random name is generated for them with the randomName()
-        function. 
+        function.
         """
         if ournewhero.name == '':
             ournewhero.name = self.randomName()
         return ournewhero
 
-    """@brief Creates a random name for the game
-
-    This is the random name generator function. The function creates two random
-    integers to use as the row read in the csv file. It then removes the brackets
-    and '' from the data and concatenates the string.
-    @param : none
-    @return : A concatenated string with a random name
-    """
     def randomName(self):
+        """@brief Creates a random name for the game
+
+        This is the random name generator function. The function creates two random
+        integers to use as the row read in the csv file. It then removes the brackets
+        and '' from the data and concatenates the string.
+        @param : none
+        @return : A concatenated string with a random name
+        """
         randPrefix = random.randint(1,26)
         randSuffix = random.randint(1,29)
         with open('csv/MedievalPrefiexes.csv','rt') as prefixes:
@@ -707,13 +707,13 @@ class Game():
                 centerprint('You walk back to camp')
 
     #begin caesar cipher game
-	"""
-	This function begins a new caesar cipher game. It will add/subtract from the player's health
-	and update the database and csv with a new high score if necessary
-	@param:none
-	@return none
-	"""
     def caesar(self):
+        """
+        This function begins a new caesar cipher game. It will add/subtract from the player's health
+        and update the database and csv with a new high score if necessary
+        @param:none
+        @return none
+        """
         centerprint("A large board appears before you and asks you to decipher a set of words")
         centerprint("But before you do, you must decide how much HP to bet")
         centerprint("For each word you answer incorrectly, you will lose that amount health points")
@@ -763,12 +763,13 @@ class Game():
             writer.writerows(lines)
 
         centerprint("Ave atque vale!")
-	"""
-	This cipher return a normal word ciphered by a random int. 
-	@param: the word to cipher
-	@return: the ciphered word 
-	"""
+
     def cipher(self, word):
+        """
+    	This cipher return a normal word ciphered by a random int.
+    	@param: the word to cipher
+    	@return: the ciphered word
+    	"""
         randomNum = random.randint(1,25)
         randomNum = random.randint(1,25)
         randomNum = random.randint(1,25)
@@ -782,26 +783,25 @@ class Game():
         return newWord,randomNum
 
 	#check if string is valid int
-	"""
-	This function checks if an entered string is a valid int
-	@param: the string that the user entered in
-	@return: the new int
-	"""
     def validIntCheck(self, stringNum):
+        """
+    	This function checks if an entered string is a valid int
+    	@param: the string that the user entered in
+    	@return: the new int
+    	"""
         while(not(stringNum.isnumeric())):
             stringNum = input("Please enter a positive integer: ")
         return int(stringNum)
 
 
 	#begin word scramble game
-	"""
-	This function begins the word scramble mini game. It will add/subtract from a player's health and update
-	the database and csv with a new high score if necessary
-	@param: none
-	@return: none
-	
-	"""
     def scramble(self):
+        """
+        This function begins the word scramble mini game. It will add/subtract from a player's health and update
+        the database and csv with a new high score if necessary
+        @param: none
+        @return: none
+        """
         print("Word Scrambler!")
         centerprint("A large board appears before you and asks you to unscramble a set of words")
         centerprint("But before you do, you must decide how much HP to bet")
@@ -849,12 +849,13 @@ class Game():
             lines[1][2] = str((totalHPEarned - ((3 - correct)*HPWagered)))
             writer = csv.writer(open('./csv/highScores.csv', 'w', newline=''))
             writer.writerows(lines)
-    """
-	This function takes a normal word and scrambles it by randomly shuffling its letters
-	@param: world to be scrambled
-	@return: the newly scrambled word
-	"""
+
     def scrambler(self,word):
+        """
+    	This function takes a normal word and scrambles it by randomly shuffling its letters
+    	@param: world to be scrambled
+    	@return: the newly scrambled word
+    	"""
         word = word.strip()
         wordArray = list(word)
         numpy.random.shuffle(wordArray)
@@ -1013,8 +1014,8 @@ class Game():
     #equipment inventory screen
     def equipment_management(self):
         """
-        Equipment menu accessed from Camp. User can equip, drop or get info 
-        on equipment in inventory. 
+        Equipment menu accessed from Camp. User can equip, drop or get info
+        on equipment in inventory.
 
         @exceptions IndexError & ValueError
         """
