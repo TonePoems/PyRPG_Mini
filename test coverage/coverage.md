@@ -72,29 +72,4 @@ the progress made to the Hero was actually saved.
 Added Barbarian Character:
 The addition of the barbarian character was created to add more dynamic layers to the game. The addition of a new character with different abilities and different strengths and weaknesses allows the game to be more fun. The addition of this character was tested by making sure that when the user selects the barbarian character, that the barbarian character is actually created and populated with the correct stats. 
 
-Name                                                     Stmts   Miss  Cover
 
-/Users/caleb/.local/lib/python3.8/site-packages/six.py     491    244    50%
-  -
-Armor.py                                                    80     40    50%
-  -
-Enemy.py                                                    50     19    62%
-  -
-Game.py                                                   1007    593    41%
-  -
-Hero.py                                                    257    113    56%
-  -
-Item.py                                                     17      6    65%
-  -
-Shield.py                                                   80     40    50%
-  -
-Weapon.py                                                   72     34    53%
-  -
-__init__.py                                                 25      6    76%
-  -
-dbsetup.py                                                 167    156     7%
-  -
-texttools.py                                                54     11    80%
-  -
-
-TOTAL                                                     2300   1262    45%
