@@ -1,4 +1,4 @@
-This file is a representation of how each group member individually tested their code. If you want the actual metrics check the metrics folder within this test coverage folder.
+This file is a representation of how each group member individually tested their code. If you want the actual metrics check the metrics folder within this test coverage folder. For a game that is based on user input it is tough to have great coverage because there are possibilities with every character individually etc. 
 
 Caleb Austin:
   -
