@@ -31,6 +31,7 @@ Flow of game in Blacksmith and Peddler:
 Originally most actions taken at the blacksmith or peddler sent the player back to the camp where they started the interaction. This took away from the gameplay, so I modified the functions to loop until specifically requesting to go back to base. This was tested in-game and with the coverage.
   
 Nour Hijazi:
+  -
   - Created two mini games, Caesar cipher and word scrambler 
   - Added some input validation in game.py
   - Expanded the web functionality by adding in more templates for signing up and resetting passwords
