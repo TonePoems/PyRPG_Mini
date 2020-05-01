@@ -20,6 +20,7 @@ Changes to the Start Menu:
 Originally, the start menu was not handling error user input. Instead, the game would assign things to the user when incorrect input is put in. This becomes problematic because the user, when the game is pushed to production, should not be put in debug mode when playing the game. The way this was tested was by entering incorrect input into the console when asked if I wanted to do things like "Play in debug mode" or "Play with riddles." 
 
 Anthony Mitchell:
+  -
   - Created the Archer, Monk, and Assassin playable characters
   - Modified flow of the game within the Blacksmith and Peddler
   
