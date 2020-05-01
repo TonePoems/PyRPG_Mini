@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Coverage report</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.index_ready);
+    </script>
+</head>
+<body class="indexfile">
+<div id="header">
+    <div class="content">
+        <h1>Coverage report:
+            <span class="pc_cov">38%</span>
+        </h1>
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+        <form id="filter_container">
+            <input id="filter" type="text" value="" placeholder="filter..." />
+        </form>
+    </div>
+</div>
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">n</span>
+        <span class="key">s</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">c</span> &nbsp; change column sorting
+    </p>
+    </div>
+</div>
+<div id="index">
+    <table class="index">
+        <thead>
+            <tr class="tablehead" title="Click to sort">
+                <th class="name left headerSortDown shortkey_n">Module</th>
+                <th class="shortkey_s">statements</th>
+                <th class="shortkey_m">missing</th>
+                <th class="shortkey_x">excluded</th>
+                <th class="right shortkey_c">coverage</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr class="total">
+                <td class="name left">Total</td>
+                <td>2303</td>
+                <td>1420</td>
+                <td>0</td>
+                <td class="right" data-ratio="883 2303">38%</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr class="file">
+                <td class="name left"><a href="_Users_caleb__local_lib_python3_8_site-packages_six_py.html">/Users/caleb/.local/lib/python3.8/site-packages/six.py</a></td>
+                <td>491</td>
+                <td>244</td>
+                <td>0</td>
+                <td class="right" data-ratio="247 491">50%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="Armor_py.html">Armor.py</a></td>
+                <td>80</td>
+                <td>42</td>
+                <td>0</td>
+                <td class="right" data-ratio="38 80">48%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="Enemy_py.html">Enemy.py</a></td>
+                <td>50</td>
+                <td>17</td>
+                <td>0</td>
+                <td class="right" data-ratio="33 50">66%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="Game_py.html">Game.py</a></td>
+                <td>1010</td>
+                <td>739</td>
+                <td>0</td>
+                <td class="right" data-ratio="271 1010">27%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="Hero_py.html">Hero.py</a></td>
+                <td>257</td>
+                <td>123</td>
+                <td>0</td>
+                <td class="right" data-ratio="134 257">52%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="Item_py.html">Item.py</a></td>
+                <td>17</td>
+                <td>7</td>
+                <td>0</td>
+                <td class="right" data-ratio="10 17">59%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="Shield_py.html">Shield.py</a></td>
+                <td>80</td>
+                <td>42</td>
+                <td>0</td>
+                <td class="right" data-ratio="38 80">48%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="Weapon_py.html">Weapon.py</a></td>
+                <td>72</td>
+                <td>36</td>
+                <td>0</td>
+                <td class="right" data-ratio="36 72">50%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="__init___py.html">__init__.py</a></td>
+                <td>25</td>
+                <td>6</td>
+                <td>0</td>
+                <td class="right" data-ratio="19 25">76%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="dbsetup_py.html">dbsetup.py</a></td>
+                <td>167</td>
+                <td>156</td>
+                <td>0</td>
+                <td class="right" data-ratio="11 167">7%</td>
+            </tr>
+            <tr class="file">
+                <td class="name left"><a href="texttools_py.html">texttools.py</a></td>
+                <td>54</td>
+                <td>8</td>
+                <td>0</td>
+                <td class="right" data-ratio="46 54">85%</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="no_rows">
+        No items found using the specified filter.
+    </p>
+</div>
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.1</a>,
+            created at 2020-05-01 15:03
+        </p>
+    </div>
+</div>
+</body>
+</html>
